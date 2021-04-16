@@ -1,0 +1,229 @@
+body, html {
+  height: 100%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #22222b; }
+
+.text-center {
+  text-align: center; }
+
+.wrapper {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; }
+
+.main {
+  background-image: url(../img/bg.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding-top: 38px;
+  box-sizing: border-box;
+  padding-bottom: 42px;
+  background-size: 100%; }
+
+.header {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.nav {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex; }
+  .nav-item {
+    margin-left: 15px; }
+  .nav-link {
+    color: #22222b;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: 0.3s; }
+    .nav-link:hover {
+      border-bottom: 1px solid #22222b; }
+
+.title-h1 {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 300; }
+  .title-h1 span {
+    font-weight: 500; }
+
+.btn-scroll {
+  background-color: transparent;
+  border: none;
+  display: block;
+  margin: 0 auto; }
+
+.section-about {
+  padding-top: 237px; }
+
+.box-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 223px; }
+  .box-about-item {
+    flex: 0 0 45%;
+    max-width: 45%;
+    position: relative; }
+    .box-about-item:first-child {
+      display: flex;
+      justify-content: flex-end; }
+  .box-about-back {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: -108px; }
+  .box-about-front {
+    margin-right: -61px; }
+  .box-about-vertical {
+    position: absolute;
+    left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    bottom: 60px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.3px; }
+    .box-about-vertical::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 45px;
+      background-color: #22222b;
+      position: absolute;
+      top: 103px;
+      right: 9px; }
+  .box-about-text {
+    color: #7f7f82;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 49px;
+    margin-left: -4px; }
+
+.title-h2 {
+  font-size: 48px;
+  margin-bottom: 18px;
+  margin-top: 29px;
+  margin-left: -5px;
+  font-weight: 500; }
+
+.progress-bar {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 38px; }
+  .progress-bar-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .progress-bar-line {
+    width: 100%;
+    height: 2px;
+    background-color: #22222b;
+    position: relative; }
+    .progress-bar-line::before {
+      content: '';
+      background-image: url(../img/circle.png);
+      background-repeat: no-repeat;
+      display: block;
+      width: 6px;
+      height: 11px;
+      position: absolute;
+      left: 0;
+      top: calc(50% - 5.5px); }
+    .progress-bar-line::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      display: block;
+      height: 2px;
+      background-color: #f2f2f2; }
+  .progress-bar-indesign::after {
+    width: 35%; }
+  .progress-bar-xd::after {
+    width: 20%; }
+
+.section-services {
+  background-color: #faf9fe; }
+
+.service {
+  display: grid;
+  grid-template: 1fr 1fr/ 1fr 1fr 1fr;
+  grid-gap: 46px 66px;
+  margin-bottom: 30px; }
+  .service-item:hover .service-link-text {
+    width: inherit;
+    opacity: 1;
+    padding-right: 9px; }
+  .service-text {
+    color: #7f7f82;
+    font-size: 14px;
+    line-height: 26px;
+    margin-left: 5px; }
+  .service_icon {
+    background-repeat: no-repeat;
+    display: block;
+    width: 44px;
+    height: 37px;
+    margin-bottom: 30px; }
+  .service-design {
+    background-image: url(../img/icon01.png);
+    background-size: 41px 35px; }
+  .service-photo {
+    background-image: url(../img/icon02.png);
+    background-size: 43px 35px; }
+  .service-webdesign {
+    background-image: url(../img/icon03.png);
+    background-size: 41px 35px; }
+  .service-media {
+    background-image: url(../img/icon04.png);
+    background-size: 37px 37px; }
+  .service-marketing {
+    background-image: url(../img/icon05.png);
+    background-size: 44px 37px; }
+  .service-app {
+    background-image: url(../img/icon06.png);
+    background-size: 37px 37px; }
+  .service-link {
+    color: #22222b;
+    font-size: 14px;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+    height: 50px; }
+    .service-link-text {
+      padding-right: 0;
+      opacity: 0;
+      width: 0;
+      transition: 0.3s ease-in-out; }
+    .service-link-line {
+      display: block;
+      width: 25px;
+      height: 1px;
+      background-color: #22222b; }
+
+.title-services {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 19px; }
+
+.title-h3 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 18px; }
+
+.after-title {
+  font-size: 16px;
+  color: #7f7f82;
+  margin-bottom: 67px; }
+
+/*# sourceMappingURL=style.css.map */
